@@ -1,0 +1,391 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@charset "utf-8";
+
+html{
+	overflow-y: scroll;	
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #444;
+}
+section:after{
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+	content:"";
+}
+a{
+	color: #444;
+	text-decoration: none;
+}
+
+/* GENERIC CLASSES */
+.display-block{
+	display: block;
+}
+.display-inline{
+	display: inline;
+}
+.display-table{
+	display: table;
+}
+.valign-middle{
+	display: table-cell;
+	vertical-align: middle;
+	float: none !important;
+}
+.text-underline{
+	text-decoration: underline;
+}
+/* START OF NAV STYLING */
+.navbar.topNav{
+	background: #e4e4e4;
+	min-height: 30px;
+	margin-bottom: 0;
+	border-bottom: 5px solid #ff6600;	
+}
+.navbar.topNav .navbar-nav{
+	display: block;
+	padding: 0 20px;
+	float: right;
+}
+.navbar.topNav .navbar-nav li{
+	float: right;
+}
+.navbar.topNav .navbar-nav > li > a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #444;
+}
+.navbar.topNav .navbar-nav > li.active > a {
+	background: #FF6600;
+	color: #fff;
+}
+
+.navbar-brand{
+	height: auto;
+	padding: 10px 20px;
+}
+
+.navbar.mainNav .navbar-collapse{
+	background: #ff6600;
+	min-height: 40px;
+	margin-bottom: 10px;
+}
+.navbar-toggle{
+	background: #ff6600;
+	margin-top: 40px;
+}
+.navbar-toggle .icon-bar{
+	background: #fff;
+}
+.navbar.mainNav .navbar-nav > li > a{
+		color: #fff;
+}
+.navbar.mainNav .navbar-nav > li > a:hover,
+.navbar.mainNav .navbar-nav > li > a:focus,
+.navbar.mainNav .navbar-nav > li.active > a{
+	color: #444;
+	background-color: #fff;	
+}
+
+@media (min-width: 768px){
+	.navbar-header {
+		float: none;
+	}
+	.navbar.mainNav .navbar-nav > li > a{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border-right: 1px solid #fff;	
+	}
+	.navbar.mainNav .navbar-nav > li:last-child > a{
+		border-right: none;	
+	}
+	
+	
+}
+/* END OF NAV STYLING */
+
+/* START OF BREADCRUMB STYLING */
+.breadcrumb {
+	padding: 8px 0px;
+	margin-bottom: 20px;
+	list-style: none;
+	background-color: transparent;
+}
+.breadcrumb > li + li:before {
+	padding: 0;
+	content: "";
+}
+.breadcrumb > li{
+	margin-right: 20px;
+}
+.breadcrumb > li > a{
+	color: #444;
+}
+.breadcrumb > li.active > a{
+	color: #FF6600;
+}
+.breadcrumb > li > a > span{
+	margin-right: 5px;
+}
+/* END OF BREADCRUMB STYLING */
+
+/* START OF PANEL STYLING */
+.panel-default {
+	border-color: transparent;
+}
+.subscriptionPanel.selected,
+.subscriptionPanel:hover{
+	border-color: #ff8636;
+}
+.panel{
+	padding: 0 10px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+.panel-body{
+	padding: 15px 0;
+}
+.panel-default > .panel-heading,
+.panel-footer{
+	background-color: #fff;
+	padding: 10px 0px;
+	border-color: #ff8636;
+}
+.panel-default > .panel-heading .panel-title {
+	font-size: 20px;
+	text-align: center;
+}
+.panel-footer{
+	border: none;
+}
+.subscriptionPanel .panel-body h4{
+	margin-bottom: 5px;
+	color: #ff8636;
+}
+.subscriptionPanel .panel-body h4.total{
+	color: #ff8636;
+	border-width: 1px 0px 1px 0px;
+	border-color: #e4e4e4;
+	border-style: solid;
+	line-height: 40px;
+}
+.subscriptionPanel .panel-body h6{
+	margin-top: 0px;
+}
+/* END OF PANEL STYLING */
+
+/* START OF PAGINATION STYLING */
+.pagination {
+    margin: 0 0 0 15px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    margin: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pager{
+    clear: both;
+}
+.pagination > li > a, .pagination > li > span{
+	color: #444;
+}
+.pagination > .selected > a,
+.pagination > .selected > span,
+.pagination > .selected > a:hover,
+.pagination > .selected > span:hover,
+.pagination > .selected > a:focus,
+.pagination > .selected > span:focus{
+	background-color: #ff6600;
+	border-color: #ff6600;
+	color: #fff;
+}
+
+
+/* END OF PAGINATION STYLING */
+
+/* START OF FORM STYLING */
+	form{
+		margin: 30px 0;	
+	}
+	form input[type="email"],
+	form input[type="password"],
+	form input[type="text"],
+	form input[type="date"],
+	form input[type="number"]{
+		border-color: #e4e4e4;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		
+		box-shadow: none;
+	}
+	.btn,
+	button,
+	button[type="submit"],
+	form input[type="submit"],
+	form input[type="button"]{
+	display: block;
+	margin: 5px auto;
+	border: none;
+	padding: 6px 12px;
+	color: #fff;
+	outline: none;
+	
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	
+	background: #ff8636; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmODYzNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjg2MzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ff8636 0%, #ff8636 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8636), color-stop(100%,#ff8636)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff8636 0%,#ff8636 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff8636 0%,#ff8636 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff8636 0%,#ff8636 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff8636 0%,#ff8636 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8636', endColorstr='#ff8636',GradientType=0 ); /* IE6-8 */
+}
+.btn:hover,
+button:hover,
+button[type="submit"]:hover,
+form input[type="submit"]:hover,
+form input[type="button"]:hover{
+	color: #fff;
+}
+.btn-secondary{
+	background: #e4e4e4 !important;
+	color: #444 !important;
+}
+.btn-secondary:hover{
+	color: #444 !important;
+}
+/* END OF FORM STYLING */
+
+/* THEME STYLING */
+.wizardSectionHeader{
+	border-bottom: 1px solid #e4e4e4;
+	margin-bottom: 20px;
+}
+#profile section{
+	border-bottom: 1px solid #e4e4e4;
+	padding: 10px 0;	
+}
+#profile .profileHeader h3,
+#profile .profileHeader h5{
+	padding-right: 20px;
+}
+#profile .glyphicon{
+	margin-right: 5px;
+	color: #ff8636;
+}
+.btn-link{
+	color: #ff8636;
+}
+.text-color-dark-gray{
+	color: #444 !important;
+}
+.text-color-orange{
+	color: #ff8636 !important;
+}
+.pastSubscriptionPanel .subscriptionPanel h4{
+	color: #444;
+}
+.pastSubscriptionPanel .subscriptionPanel.current h3{
+	color: #ff8636;
+}
+.pastSubscriptionPanel .subscriptionPanel small{
+	margin: 0 10px;
+}
+.pastSubscriptionPanel .subscriptionPanel .subscriptionStatus{
+	display: block;
+	height: 30px;
+	background: #e4e4e4;
+	line-height: 30px;
+}
+.pastSubscriptionPanel .panel-heading{
+	border-color: transparent;	
+}
+.pastSubscriptionPanel .panel-body{
+	padding-top: 0;
+}
+.pastSubscriptionPanel .subscriptionPanel .subscriptionStatus.current{
+	background: #ff8636;
+	color: #fff;
+}
+.detailReportsList{
+	padding: 20px 0;
+	border-width: 1px 0px 1px 0px;
+	border-color: #e4e4e4;
+	border-style: solid;
+}
+table tr th{
+	background: #e4e4e4;
+	color: #444;
+	vertical-align: top;
+}
+table tr:last-child td{
+	border-bottom: 1px solid #e4e4e4;
+}
+.status-fail{
+	color: #a94442;
+}
+.status-success{
+	color: #3c763d;	
+}
+.viewEditSubscriptions .glyphicon{
+	margin-right: 10px;	
+}
+.viewEditSubscriptions .glyphicon.glyphicon-pencil{
+	color: #31708f;
+}
+.viewEditSubscriptions .glyphicon.glyphicon-remove{
+	color: #a94442;
+}
+#addSubscription{
+	margin-top: 20px !important;
+	margin:0;
+}
+.editProfileBtn{
+	margin-top: 5px;	
+}
+@media (max-width: 768px){
+	.navbar{
+		margin-bottom: 10px;
+	}
+	label{
+		margin-top: 20px;	
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.profile-info div:nth-child(3),
+	.profile-contactInfo div:nth-child(3){
+		clear: both;
+	}
+}
+
+.errorMessage{
+    color: red;
+}
+
+
+
+
