@@ -33,7 +33,10 @@ $('.search-form form').submit(function(){
 	'model'=>$model,
 )); */?>
 </div>--><!-- search-form -->
-
+<a href="<?php echo Yii::app()->baseUrl; ?>/subscription/create">
+    <button id="addSubscription" class="btn pull-right">Add Subscription</button>
+</a>
+<div style="clear: both;"></div>
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'subscription-grid',
     'itemsCssClass' => 'table table-responsive table-striped table-hover',
@@ -52,7 +55,7 @@ $('.search-form form').submit(function(){
 		'durations_in_days',
         array(
             'header'=>'Hit Date',
-            'value'=>'isset($data->date_created)?date_format(new DateTime($data->date_created),"Y-m-d"):""',
+            'value'=>'isset($data->date_created) && $data->date_created != "0000-00-00 00:00:00"?date_format(new DateTime($data->date_created),"Y-m-d"):"0000-00-00"',
             'filter'=>false,
             'sortable'=>false
         ),

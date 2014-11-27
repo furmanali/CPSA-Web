@@ -34,7 +34,8 @@ class Subscription extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('hits_allowed', 'numerical', 'integerOnly'=>true),
+            array('sub_name, hits_allowed, durations_in_days, price', 'required'),
+            array('hits_allowed', 'numerical', 'integerOnly'=>true),
 			array('durations_in_days', 'numerical'),
 			array('sub_name', 'length', 'max'=>255),
 			array('price', 'length', 'max'=>10),

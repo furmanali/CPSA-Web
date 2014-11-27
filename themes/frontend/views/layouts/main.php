@@ -2,16 +2,17 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>SalesDrip</title>
-
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl;?>/css/bootstrap.css" media="screen, projection" />
+    <!-- blueprint CSS framework -->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl;?>/css/bootstrap.css" media="screen, projection" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="<?php echo Yii::app()->theme->baseUrl;?>/js/bootstrap.js" type="text/javascript" ></script>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl;?>/css/custom.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl;?>/css/custom.css" media="screen, projection" />
+    <meta charset="utf-8">
+    <title>SalesDripp</title>
+
+
 </head>
 
 <body>

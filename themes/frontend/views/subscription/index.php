@@ -17,10 +17,10 @@ $this->menu=array(
     <h5>Join today and collaborate with the smartest offers in the world.</h5>
 
     <ol class="breadcrumb">
-        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>Select your plan</a></li>
-        <li><a href="userInfo.html"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>Provide your information</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>Choose Payment method</a></li>
-        <li><a href="profile.html"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>Final</a></li>
+        <li class="active"><a href="#" style="cursor: default;"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>Select your plan</a></li>
+        <li><a href="#" style="cursor: default;"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>Provide your information</a></li>
+        <li><a href="#" style="cursor: default;"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>Choose Payment method</a></li>
+        <li><a href="#" style="cursor: default;"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>Final</a></li>
     </ol>
 </section>
 <section class="wizardSectionContent">

@@ -103,7 +103,21 @@ class UsersDetailsController extends Controller
                     $model->save();
                     $model_counter->users_credentials_id = $model_credentials->id;
                     $model_counter->date_of_expiry = date('Y-m-d');
-                    $model_counter->save(false);
+                    if($model_counter->save(false))
+                    {
+                        //Confirmation email code starts
+
+                        $to = $model_credentials->email;
+                        $subject = "Welcome To SalesDrip CPSA!";
+                        $message = "Thank you for joining!,"."<br>";
+                        $message .= "You have registered successfully and your credentials are as follows"."<br><br>";
+                        $message .= "API Key: ".$model_credentials->authkey."<br>";
+                        $message .= "License Key: ".$model_credentials->x2license."<br><br>";
+                        $message .= "Thank You"."<br>";
+                        $from = "FROM: SalesDrip CPSA Admin";
+
+                        mail($to,$subject,$message,$from);
+                    }
                 }
                 $this->redirect(array('view','id'=>$model->id));
             }
