@@ -12,7 +12,7 @@ $this->breadcrumbs=array(
 <h1>Login</h1>
 
 <p>Please fill out the following form with your login credentials:</p>
-<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" style="margin: auto;">
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,

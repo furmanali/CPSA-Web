@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Subscription <?php echo $model->id; ?></h1>
+<h1>Update Subscription <span>[<?php echo $model->sub_name; ?>]</span></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -293,7 +293,7 @@ form input[type="button"]:hover{
 #profile .profileHeader h5{
 	padding-right: 20px;
 }
-#profile .glyphicon{
+#profile.glyphicon{
 	margin-right: 5px;
 	color: #ff8636;
 }
@@ -351,13 +351,13 @@ table tr:last-child td{
 .status-success{
 	color: #3c763d;	
 }
-.viewEditSubscriptions .glyphicon{
+.glyphicon{
 	margin-right: 10px;	
 }
-.viewEditSubscriptions .glyphicon.glyphicon-pencil{
+.glyphicon.glyphicon-pencil{
 	color: #31708f;
 }
-.viewEditSubscriptions .glyphicon.glyphicon-remove{
+.glyphicon.glyphicon-remove{
 	color: #a94442;
 }
 #addSubscription{
@@ -385,7 +385,9 @@ table tr:last-child td{
 .errorMessage{
     color: red;
 }
-
+h1 span{
+    color: #ff8636;
+}
 
 
 

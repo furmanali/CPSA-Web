@@ -32,7 +32,7 @@ class HitsLogsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','admin','update'),
+				'actions'=>array('create','admin','update','detailReport'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -139,6 +139,22 @@ class HitsLogsController extends Controller
 			$model->attributes=$_GET['HitsLogs'];
 
 		$this->render('admin',array(
+			'model'=>$model,
+		));
+	}
+
+	/**
+	 * Manages all models.
+	 */
+	public function actionDetailReport($id)
+	{
+		$model=new HitsLogs('report',array('id'=>$id));
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['HitsLogs']))
+			$model->attributes=$_GET['HitsLogs'];
+        $model->users_credentials_id = $id;
+
+		$this->render('detailReport',array(
 			'model'=>$model,
 		));
 	}

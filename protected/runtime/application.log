@@ -7225,3 +7225,398 @@ Stack trace:
 #11 {main}
 REQUEST_URI=/cpsa/hitsLogs/admin
 ---
+2014/11/26 18:13:07 [error] [exception.CException] exception 'CException' with message 'Property "CLinkColumn.value" is not defined.' in D:\xampp\htdocs\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\framework\YiiBase.php(220): CComponent->__set('value', '$data->id')
+#1 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 D:\xampp\htdocs\framework\web\CBaseController.php(147): CGridView->init()
+#4 D:\xampp\htdocs\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 D:\xampp\htdocs\cpsa\themes\frontend\views\usersCredentials\summaryReport.php(67): CBaseController->widget('zii.widgets.gri...', Array)
+#6 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#8 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#9 D:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('summaryReport', Array, true)
+#10 D:\xampp\htdocs\cpsa\protected\controllers\UsersCredentialsController.php(158): CController->render('summaryReport', Array)
+#11 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): UsersCredentialsController->actionSummaryReport()
+#12 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#16 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#17 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('summaryReport')
+#21 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersCredential...')
+#22 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#24 {main}
+REQUEST_URI=/cpsa/usersCredentials/summaryReport
+---
+2014/11/26 18:16:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hitsLogs".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('hitsLogs')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('hitsLogs')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersCredential...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/usersCredentials/hitsLogs/admin/id/1
+HTTP_REFERER=http://localhost/cpsa/usersCredentials/summaryReport
+---
+2014/11/26 18:18:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hitsLogs".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('hitsLogs')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('hitsLogs')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersCredential...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/usersCredentials/hitsLogs/detailReport/id/1
+---
+2014/11/26 18:19:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hitsLogs".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('hitsLogs')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('hitsLogs')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersCredential...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/usersCredentials/hitsLogs/detailReport/id/1
+---
+2014/11/26 18:19:25 [error] [exception.CException] exception 'CException' with message 'Property "HitsLogs.hits_available" is not defined.' in D:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('hits_available')
+#1 D:\xampp\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('hits_available')
+#2 D:\xampp\htdocs\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(HitsLogs), 'hits_available')
+#3 D:\xampp\htdocs\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(HitsLogs), 'hits_available', Array)
+#4 D:\xampp\htdocs\framework\zii\widgets\grid\CDataColumn.php(103): CHtml::activeTextField(Object(HitsLogs), 'hits_available', Array)
+#5 D:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(532): CGridColumn->renderFilterCell()
+#7 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#8 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#9 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#13 D:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 D:\xampp\htdocs\cpsa\themes\frontend\views\hitsLogs\detailReport.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#15 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#16 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#18 D:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('detailReport', Array, true)
+#19 D:\xampp\htdocs\cpsa\protected\controllers\HitsLogsController.php(159): CController->render('detailReport', Array)
+#20 [internal function]: HitsLogsController->actionDetailReport('1')
+#21 D:\xampp\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(HitsLogsController), Array)
+#22 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HitsLogsController), Object(ReflectionMethod), Array)
+#23 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#24 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#27 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#28 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#30 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('detailReport')
+#32 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('hitsLogs/detail...')
+#33 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#34 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#35 {main}
+REQUEST_URI=/cpsa/hitsLogs/detailReport/id/1
+---
+2014/11/26 18:19:52 [error] [exception.CException] exception 'CException' with message 'Property "HitsLogs.hits_available" is not defined.' in D:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('hits_available')
+#1 D:\xampp\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('hits_available')
+#2 D:\xampp\htdocs\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(HitsLogs), 'hits_available')
+#3 D:\xampp\htdocs\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(HitsLogs), 'hits_available', Array)
+#4 D:\xampp\htdocs\framework\zii\widgets\grid\CDataColumn.php(103): CHtml::activeTextField(Object(HitsLogs), 'hits_available', Array)
+#5 D:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(532): CGridColumn->renderFilterCell()
+#7 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#8 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#9 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#13 D:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 D:\xampp\htdocs\cpsa\themes\frontend\views\hitsLogs\detailReport.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#15 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#16 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#18 D:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('detailReport', Array, true)
+#19 D:\xampp\htdocs\cpsa\protected\controllers\HitsLogsController.php(159): CController->render('detailReport', Array)
+#20 [internal function]: HitsLogsController->actionDetailReport('1')
+#21 D:\xampp\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(HitsLogsController), Array)
+#22 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HitsLogsController), Object(ReflectionMethod), Array)
+#23 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#24 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#27 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#28 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#30 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('detailReport')
+#32 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('hitsLogs/detail...')
+#33 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#34 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#35 {main}
+REQUEST_URI=/cpsa/hitsLogs/detailReport/id/1
+---
+2014/11/26 18:20:40 [error] [exception.CException] exception 'CException' with message 'Property "HitsLogs.hits_available" is not defined.' in D:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('hits_available')
+#1 D:\xampp\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('hits_available')
+#2 D:\xampp\htdocs\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(HitsLogs), 'hits_available')
+#3 D:\xampp\htdocs\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(HitsLogs), 'hits_available', Array)
+#4 D:\xampp\htdocs\framework\zii\widgets\grid\CDataColumn.php(103): CHtml::activeTextField(Object(HitsLogs), 'hits_available', Array)
+#5 D:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(532): CGridColumn->renderFilterCell()
+#7 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#8 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#9 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#13 D:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#14 D:\xampp\htdocs\cpsa\themes\frontend\views\hitsLogs\detailReport.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#15 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#16 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#18 D:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('detailReport', Array, true)
+#19 D:\xampp\htdocs\cpsa\protected\controllers\HitsLogsController.php(159): CController->render('detailReport', Array)
+#20 [internal function]: HitsLogsController->actionDetailReport('1')
+#21 D:\xampp\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(HitsLogsController), Array)
+#22 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HitsLogsController), Object(ReflectionMethod), Array)
+#23 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#24 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#27 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#28 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#30 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('detailReport')
+#32 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('hitsLogs/detail...')
+#33 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#34 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#35 {main}
+REQUEST_URI=/cpsa/hitsLogs/detailReport/id/1
+---
+2014/11/26 18:23:37 [error] [php] Missing argument 1 for HitsLogs::report(), called in D:\xampp\htdocs\cpsa\themes\frontend\views\hitsLogs\detailReport.php on line 35 and defined (D:\xampp\htdocs\cpsa\protected\models\HitsLogs.php:113)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CBaseController.php(95): HitsLogsController->renderInternal()
+#1 D:\xampp\htdocs\framework\web\CController.php(869): HitsLogsController->renderFile()
+#2 D:\xampp\htdocs\framework\web\CController.php(782): HitsLogsController->renderPartial()
+#3 D:\xampp\htdocs\cpsa\protected\controllers\HitsLogsController.php(159): HitsLogsController->render()
+#4 unknown(0): HitsLogsController->actionDetailReport()
+#5 D:\xampp\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#6 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): HitsLogsController->runAction()
+#9 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): AccessControlFilter->filter()
+#11 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): HitsLogsController->filterAccessControl()
+#12 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\xampp\htdocs\framework\web\CController.php(265): HitsLogsController->runActionWithFilters()
+#15 D:\xampp\htdocs\framework\web\CWebApplication.php(282): HitsLogsController->run()
+#16 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 D:\xampp\htdocs\cpsa\index.php(22): CWebApplication->run()
+REQUEST_URI=/cpsa/hitsLogs/detailReport/id/1
+in D:\xampp\htdocs\cpsa\protected\models\HitsLogs.php (113)
+in D:\xampp\htdocs\cpsa\themes\frontend\views\hitsLogs\detailReport.php (35)
+in D:\xampp\htdocs\cpsa\protected\controllers\HitsLogsController.php (159)
+2014/11/26 18:28:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hitsLogs".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('hitsLogs')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('hitsLogs')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersCredential...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/usersCredentials/hitsLogs/detailReport/id/1
+---
+2014/11/26 18:28:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hitsLogs".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('hitsLogs')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('hitsLogs')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersCredential...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/usersCredentials/hitsLogs/admin/id/1
+HTTP_REFERER=http://localhost/cpsa/usersCredentials/summaryReport
+---
+2014/11/26 18:28:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hitsLogs".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('hitsLogs')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('hitsLogs')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersCredential...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/usersCredentials/hitsLogs/admin/id/1
+HTTP_REFERER=http://localhost/cpsa/usersCredentials/summaryReport
+---
+2014/11/26 18:41:52 [error] [exception.CException] exception 'CException' with message 'Property "UsersCredentials.users_credentials_id" is not defined.' in D:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('users_credentia...')
+#1 D:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('users_credentia...')
+#2 D:\xampp\htdocs\framework\base\CComponent.php(612): eval()
+#3 D:\xampp\htdocs\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('CHtml::link($da...', Array)
+#4 D:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(UsersCredentials))
+#5 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 D:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 D:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 D:\xampp\htdocs\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 D:\xampp\htdocs\cpsa\themes\frontend\views\usersCredentials\summaryReport.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#14 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#15 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#16 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#17 D:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('summaryReport', Array, true)
+#18 D:\xampp\htdocs\cpsa\protected\controllers\UsersCredentialsController.php(158): CController->render('summaryReport', Array)
+#19 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): UsersCredentialsController->actionSummaryReport()
+#20 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#24 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#25 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#27 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('summaryReport')
+#29 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersCredential...')
+#30 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#32 {main}
+REQUEST_URI=/cpsa/usersCredentials/summaryReport
+---
+2014/11/26 18:42:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detailReports".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('detailReports')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('detailReports')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('hitsLogs/detail...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/hitsLogs/detailReports/1
+HTTP_REFERER=http://localhost/cpsa/usersCredentials/summaryReport
+---
+2014/11/26 18:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detailReports".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('detailReports')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('detailReports')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('hitsLogs/detail...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/hitsLogs/detailReports/1
+HTTP_REFERER=http://localhost/cpsa/usersCredentials/summaryReport
+---
+2014/11/26 18:42:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "detailReports".' in D:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('detailReports')
+#1 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('detailReports')
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('hitsLogs/detail...')
+#3 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/cpsa/hitsLogs/detailReports/id/1
+HTTP_REFERER=http://localhost/cpsa/usersCredentials/summaryReport
+---
+2014/11/27 10:12:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\xampp\htdocs\cpsa\protected\controllers\UsersDetailsController.php:198
+Stack trace:
+#0 D:\xampp\htdocs\cpsa\protected\controllers\UsersDetailsController.php(55): UsersDetailsController->loadModel('admin')
+#1 [internal function]: UsersDetailsController->actionView('admin')
+#2 D:\xampp\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsersDetailsController), Array)
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsersDetailsController), Object(ReflectionMethod), Array)
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersDetails/vi...')
+#14 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#16 {main}
+REQUEST_URI=/cpsa/usersDetails/view/id/admin
+HTTP_REFERER=http://localhost/cpsa/
+---
+2014/11/27 10:14:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\xampp\htdocs\cpsa\protected\controllers\UsersDetailsController.php:198
+Stack trace:
+#0 D:\xampp\htdocs\cpsa\protected\controllers\UsersDetailsController.php(55): UsersDetailsController->loadModel('admin')
+#1 [internal function]: UsersDetailsController->actionView('admin')
+#2 D:\xampp\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsersDetailsController), Array)
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsersDetailsController), Object(ReflectionMethod), Array)
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersDetails/vi...')
+#14 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#16 {main}
+REQUEST_URI=/cpsa/usersDetails/view/id/admin
+HTTP_REFERER=http://localhost/cpsa/
+---
+2014/11/27 10:17:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\xampp\htdocs\cpsa\protected\controllers\UsersDetailsController.php:198
+Stack trace:
+#0 D:\xampp\htdocs\cpsa\protected\controllers\UsersDetailsController.php(55): UsersDetailsController->loadModel('admin')
+#1 [internal function]: UsersDetailsController->actionView('admin')
+#2 D:\xampp\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsersDetailsController), Array)
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsersDetailsController), Object(ReflectionMethod), Array)
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersDetails/vi...')
+#14 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#16 {main}
+REQUEST_URI=/cpsa/usersDetails/view/id/admin
+HTTP_REFERER=http://localhost/cpsa/usersCredentials/summaryReport
+---
+2014/11/27 10:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\xampp\htdocs\cpsa\protected\controllers\UsersDetailsController.php:198
+Stack trace:
+#0 D:\xampp\htdocs\cpsa\protected\controllers\UsersDetailsController.php(55): UsersDetailsController->loadModel('admin')
+#1 [internal function]: UsersDetailsController->actionView('admin')
+#2 D:\xampp\htdocs\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UsersDetailsController), Array)
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsersDetailsController), Object(ReflectionMethod), Array)
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\cpsa\protected\components\Controller.php(28): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): Controller->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('usersDetails/vi...')
+#14 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\cpsa\index.php(22): CApplication->run()
+#16 {main}
+REQUEST_URI=/cpsa/usersDetails/view/id/admin
+HTTP_REFERER=http://localhost/cpsa/usersCredentials/summaryReport
+---

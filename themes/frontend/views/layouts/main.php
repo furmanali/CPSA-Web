@@ -19,7 +19,12 @@
     <nav class="navbar topNav">
         <ul class="nav navbar-nav">
             <?php
-            if(isset(Yii::app()->user->id))
+            if(isset(Yii::app()->user->id) && Yii::app()->user->id == 'admin')
+            { ?>
+                <li><a href="<?php echo Yii::app()->baseUrl; ?>/site/logout">Logout</a></li>
+                <li><a href="<?php echo Yii::app()->baseUrl; ?>">Welcome: <?php echo Yii::app()->user->email; ?></a></li>
+            <?php }
+            elseif(isset(Yii::app()->user->id))
             { ?>
                 <li><a href="<?php echo Yii::app()->baseUrl; ?>/site/logout">Logout</a></li>
                 <li><a href="<?php echo Yii::app()->baseUrl; ?>/usersDetails/view/id/<?php echo Yii::app()->user->id;?>">Welcome: <?php echo Yii::app()->user->email; ?></a></li>
@@ -48,10 +53,17 @@
                 <li><a href="<?php echo Yii::app()->baseUrl;?>">Home</a></li>
                 <li><a href="<?php echo Yii::app()->baseUrl;?>/subscription">Plan</a></li>
                 <?php
-                if(isset(Yii::app()->user->id))
+                if(isset(Yii::app()->user->id) && Yii::app()->user->id == 'admin')
+                { ?>
+                    <li><a href="<?php echo Yii::app()->baseUrl;?>/subscription/admin">Subscriptions</a></li>
+                    <li><a href="<?php echo Yii::app()->baseUrl;?>/usersCredentials/summaryReport">Reports</a></li>
+                <?php
+                }
+                elseif(isset(Yii::app()->user->id))
                 { ?>
                     <li><a href="<?php echo Yii::app()->baseUrl;?>/usersDetails/view/id/<?php echo Yii::app()->user->id;?>">Profile</a></li>
-                <?php }
+                <?php
+                }
                 ?>
             </ul>
         </div><!--/.nav-collapse -->

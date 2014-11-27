@@ -42,17 +42,42 @@ $('.search-form form').submit(function(){
     //'htmlOptions' => array('class' => 'table table-responsive table-striped table-hover'),
     //'filter'=>$model,
 	'columns'=>array(
-		'id',
+        array(
+            'header'=>'Sr.No',
+            'class'=>'indexColumn',
+        ),
 		'sub_name',
 		'hits_allowed',
 		'price',
 		'durations_in_days',
-		'date_created',
+        array(
+            'header'=>'Hit Date',
+            'value'=>'isset($data->date_created)?date_format(new DateTime($data->date_created),"Y-m-d"):""',
+            'filter'=>false,
+            'sortable'=>false
+        ),
 		/*
 		'date_modified',
 		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
+        array(
+            'header' => 'Actions',
+            'class' => 'CButtonColumn',
+            'template' => '{update}{delete}',
+            'buttons'=>array(
+                'update' => array(
+                    'imageUrl' =>false,
+                    'label' => '',
+                    'options' => array( 'title'=>'Edit', 'class' => 'glyphicon glyphicon-pencil'),
+                ),
+                'delete' => array(
+                    'imageUrl' =>false,
+                    'label' => '',
+                    'options' => array( 'title'=>'Delete', 'class' => 'glyphicon glyphicon-remove'),
+                ),
+            ),
+        ),
 	),
-)); ?>
+));
+
+
+?>

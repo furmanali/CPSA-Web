@@ -32,7 +32,7 @@ $('.search-form form').submit(function(){
 	'id'=>'hits-logs-grid',
     'itemsCssClass' => 'table table-responsive table-striped table-hover',
     'pager'=>array('cssFile'=>false, 'class'=>'CLinkPager', 'htmlOptions' => array('class' => 'pull-right pagination','style'=>'clear:both;')),
-    'dataProvider'=>$model->search(),
+    'dataProvider'=>$model->report($model->users_credentials_id),
 //	'filter'=>$model,
 	'columns'=>array(
         array(
@@ -40,7 +40,7 @@ $('.search-form form').submit(function(){
             'class'=>'indexColumn',
         ),
         array(
-            'header'=>'date_created Date',
+            'header'=>'Hit Date',
             'value'=>'isset($data->date_created)?date_format(new DateTime($data->date_created),"Y-m-d"):""',
             'filter'=>false,
             'sortable'=>false

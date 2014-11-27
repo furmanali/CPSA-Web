@@ -110,6 +110,28 @@ class HitsLogs extends CActiveRecord
 		));
 	}
 
+	public function report($id)
+	{
+		// @todo Please modify the following code to remove attributes that should not be searched.
+
+		$criteria=new CDbCriteria;
+
+		$criteria->compare('id',$this->id);
+		$criteria->compare('users_credentials_id',$id);
+		$criteria->compare('authkey',$this->authkey,true);
+		$criteria->compare('x2license',$this->x2license,true);
+		$criteria->compare('google_drive_template_id',$this->google_drive_template_id,true);
+		$criteria->compare('google_printer_id',$this->google_printer_id,true);
+		$criteria->compare('ip',$this->ip,true);
+		$criteria->compare('email',$this->email,true);
+		$criteria->compare('status',$this->status);
+		$criteria->compare('date_created',$this->date_created,true);
+
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+		));
+	}
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
